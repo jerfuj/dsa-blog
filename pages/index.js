@@ -1,9 +1,27 @@
 import RecentPosts from '../components/posts/RecentPosts';
 
-import { posts } from '../dummyData';
+import { getPostData, getPostFiles } from '../lib/postHelpers';
 
-export default function Home() {
+// import { posts } from '../dummyData';
+
+export default function Home({ posts }) {
   return (
     <RecentPosts posts={posts}/>
   )
 }
+
+export const getStaticProps = () => {
+  let posts = getPostFiles();
+
+  posts = posts.map((post) => (
+    getPostData(post)
+  ))
+
+  return {
+    props: {
+      posts
+    }
+  }
+}
+
+
