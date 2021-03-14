@@ -6,7 +6,7 @@ const PostGrid = ({ posts }) => {
   return (
     <div className={styles.grid}>
       {posts.map(post => (
-        <PostCard key={post.id} post={post} />
+        <PostCard key={post.slug} post={post} />
       ))}
     </div>
   )
