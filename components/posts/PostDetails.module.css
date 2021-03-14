@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.container p {
+  text-align: start;
+}
+
+.code {
+  max-width: 700px;
+}
