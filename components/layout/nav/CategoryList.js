@@ -12,8 +12,8 @@ const categories = [
 const CategoryList = () => {
   return (
     <div className={styles.container}>
-      {categories.map(cat => (
-        <CategoryListItem cat={cat} />
+      {categories.map((cat, i) => (
+        <CategoryListItem key={i} cat={cat} />
       ))}
     </div>
   )
