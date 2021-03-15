@@ -4,22 +4,22 @@ import Link from 'next/link';
 import styles from './PostCard.module.css';
 
 const PostCard = ({ post }) => {
-  const { title, excerpt, image, date, slug } = post;
+  const { title, excerpt, image, category, slug } = post;
 
   const imgSrc = `/images/${image}`;
 
   return (
     <div className={styles.cardContainer}>
-      <Link href={`/posts/${slug}`}>
+      <Link href={`/${category}/${slug}`}>
         <a>
-          <div className={styles.img}>
-            <Image src={imgSrc} height={200} width={300} layout="responsive"/>
-          </div>
+          {/* <div className={styles.img}>
+            <Image src={imgSrc} height={120} width={200} layout="responsive"/>
+          </div> */}
           <div className={styles.text}>
             <h3>{title}</h3>
-            <time>{date}</time>
             <p>{excerpt}</p>
           </div>
+          <p className={styles.category}>{category}</p>
         </a>
       </Link>
     </div>
