@@ -1,0 +1,9 @@
+.postsContainer {
+  width: 90%;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+}
