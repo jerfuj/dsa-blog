@@ -1,7 +1,8 @@
 .cardContainer {
   margin: 0.5rem 1.5rem;
-  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   transition: all .2s ease-in-out;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .cardContainer:hover {
@@ -12,8 +13,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.text p,
+.text h3 {
+  text-align: center;
 }
 
 .text p {
-  text-align: center;
+  height: 2rem
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.category {
+  margin-left: 1rem;
+  font-style: italic;
+  font-size: .7rem
 }
