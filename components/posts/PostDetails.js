@@ -11,7 +11,6 @@ SyntaxHighlighter.registerLanguage('js', js);
 
 
 const PostDetails = ({ postData }) => {
-  const imgSrc = `/images/${postData.image}`;
 
   const customRenderers = {
     paragraph(paragraph) {
