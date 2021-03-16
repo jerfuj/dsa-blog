@@ -2,7 +2,7 @@ import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { coldarkDark } from 'react-syntax-highlighter/dist/cjs/styles/prism/';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism/';
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
 
 import styles from './PostDetails.module.css';
@@ -39,7 +39,7 @@ const PostDetails = ({ postData }) => {
         <SyntaxHighlighter
           language={language}
           children={value}
-          style={coldarkDark}
+          style={vscDarkPlus}
           className={styles.code}
         />
       )
