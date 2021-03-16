@@ -1,5 +1,4 @@
 .cardContainer {
-  margin: 0.5rem 1.5rem;
   transition: all .2s ease-in-out;
   border: 1px solid black;
   border-radius: 5px;
@@ -22,17 +21,8 @@
   text-align: center;
 }
 
-.text p {
-  height: 2rem
-}
-
 .text h3 {
   font-size: 1.5rem;
   margin-bottom: 0;
-}
-
-.category {
-  margin-left: 1rem;
-  font-style: italic;
-  font-size: .7rem
+  margin-top: 16px;
 }
