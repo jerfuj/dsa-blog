@@ -1,4 +1,15 @@
 .listItem {
   list-style: none;
   margin: .5rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.listItem a {
+  display: block;
+  width: 100%;
+}
+
+.listItem:hover {
+  color: grey;
 }
