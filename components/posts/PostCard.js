@@ -12,14 +12,10 @@ const PostCard = ({ post }) => {
     <div className={styles.cardContainer}>
       <Link href={`/${category}/${slug}`}>
         <a>
-          {/* <div className={styles.img}>
-            <Image src={imgSrc} height={120} width={200} layout="responsive"/>
-          </div> */}
           <div className={styles.text}>
             <h3>{title}</h3>
             <p>{excerpt}</p>
           </div>
-          <p className={styles.category}>{category}</p>
         </a>
       </Link>
     </div>
