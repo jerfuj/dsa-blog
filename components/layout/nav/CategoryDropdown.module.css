@@ -4,6 +4,7 @@
   padding: 0.5rem 1.8rem;
   border-radius: 20px;
   font-size: 1rem;
+  transition: all .2s ease-in-out;
 }
 
 .btn:focus {
@@ -12,6 +13,9 @@
 
 .btn:hover {
   cursor: pointer;
+  background: rgb(32, 32, 32);
+  color: #fff;
 }
+
 
 
