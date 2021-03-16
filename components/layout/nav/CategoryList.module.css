@@ -6,7 +6,10 @@
   background: white;
   margin-top: 1em;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-  padding: 0.5rem;
+  padding: 1rem;
   width: 14rem;
-  right: 3%;
+  right: 7%;
+  top: 5%;
+  align-items: flex-start;
+  border-radius: 5px;
 }
