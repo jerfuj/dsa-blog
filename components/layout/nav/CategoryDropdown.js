@@ -1,21 +1,20 @@
-import { useState } from 'react';
+import { Fragment, useState, useContext } from 'react';
+import DropdownContext from '../../../context/DropdownContext';
 
 import CategoryList from './CategoryList';
 
 import styles from './CategoryDropdown.module.css';
 
 const CategoryDropdown = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const handleShowDropdown = () => {
-    setShowDropdown(!showDropdown);
-  }
+  const dropdownCtx = useContext(DropdownContext);
 
   return (
-    <button className={styles.btn} onClick={handleShowDropdown}>
-      Categories
-      {showDropdown && <CategoryList />}
-    </button>
+    <Fragment>
+      <button className={styles.btn} onClick={dropdownCtx.toggleDropdown}>
+        Categories
+      </button>
+      {dropdownCtx.showDropdown && <CategoryList />}
+    </Fragment>
   )
 };
 
