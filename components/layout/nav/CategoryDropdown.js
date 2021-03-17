@@ -1,4 +1,4 @@
-import { Fragment, useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import DropdownContext from '../../../context/DropdownContext';
 
 import CategoryList from './CategoryList';
@@ -9,12 +9,12 @@ const CategoryDropdown = () => {
   const dropdownCtx = useContext(DropdownContext);
 
   return (
-    <Fragment>
+    <div className={styles.btnAndList}>
       <button className={styles.btn} onClick={dropdownCtx.toggleDropdown}>
         Categories
       </button>
       {dropdownCtx.showDropdown && <CategoryList />}
-    </Fragment>
+    </div>
   )
 };
 
