@@ -20,12 +20,12 @@ const PostDetails = ({ postData }) => {
         const image = node.children[0];
 
         return (
-          <div>
+          <div className={styles.imgContainer}>
             <Image
               src={`/images/${image.url}`}
               alt={image.alt}
-              width={600}
-              height={300}
+              width={400}
+              height={310}
             />
           </div>
         )
