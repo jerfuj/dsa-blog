@@ -6,6 +6,11 @@ excerpt: Javascript implementation of a binary search tree
 category: data-structures
 ---
 
+A binary search tree is a special kind of binary tree where a parent node's left subtree
+contain values less than it, and the parent node's right subtree contains values greater than it.
+
+![binary search tree](binary-search-tree.png)
+
 ```js
 class Node {
   constructor(val) {
@@ -59,6 +64,57 @@ class BinarySearchTree {
       }
     }
     return false;
+  }
+
+    BFS() {
+    const visited = [];
+    const queue = [this.root];
+    let current;
+
+    while (queue.length) {
+      current = queue.shift();
+      visited.push(current);
+      if (current.left) queue.push(current.left)
+      if (current.right) queue.push(current.right)
+    }
+
+    return visited;
+  }
+
+  DFSPreOrder() {
+    const data = [];
+
+    const traverse = (node) => {
+      data.push(node.val);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+    }
+    traverse(this.root);
+    return data;
+  }
+
+  DFSPostOrder() {
+    const data = [];
+
+    const traverse = (node) => {
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+      data.push(node.val);
+    }
+    traverse(this.root);
+    return data;
+  }
+
+  DFSInOrder() {
+    const data = [];
+
+    const traverse = (node) => {
+      if (node.left) traverse(node.left);
+      data.push(node.val);
+      if (node.right) traverse(node.right);
+    }
+    traverse(this.root);
+    return data;
   }
 }
 ```
