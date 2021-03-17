@@ -1,7 +1,9 @@
-export default function Home({ posts }) {
+import styles from './index.module.css';
+
+const Home = () => {
   return (
-    <h1>The Home Page</h1>
+    <h1 className={styles.header}>The Home Page</h1>
   )
-}
+};
 
-
+export default Home;
