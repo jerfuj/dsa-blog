@@ -1,12 +1,12 @@
 ---
-title: (Max) Binary Heap
+title: Binary Heap
 date: '03-15-2021'
 image:
-excerpt: Javascript implementation of a binary heap
+excerpt: Javascript implementation of a max binary heap
 category: data-structures
 ---
 
-### A binary heap is similar to a binary tree, but with some unique characteristics:
+## A binary heap is similar to a binary tree, but with some unique characteristics:
 
 1. In a max binary heap, the value of the parent node is always greater than its child nodes (max value is at the root)
 
@@ -18,7 +18,7 @@ category: data-structures
 
 5. Suitable to be stored in an array
 
-### Calculating a parent or child index:
+## Calculating a parent or child index:
 
 - Given a parent index (n): Children are at indices **2n + 1 (left) and 2n + 2 (right)**
 
@@ -28,10 +28,14 @@ category: data-structures
 ```js
 class MaxBinaryHeap {
   constructor() {
-    // this is where we store the nodes of the tree
+    // This is where we store the nodes of the tree
     this.values = [];
   }
-
+```
+## Inserting:
+To insert into the binary heap, we push to the end of the array, then swap (or don't) with its parent until it's
+in the correct position.
+```js
   insert(val) {
     this.values.push(val);
 
@@ -49,16 +53,20 @@ class MaxBinaryHeap {
     }
     return this.values;
   }
-
-  extract() {
+```
+## Extracting the max:
+To extract the max value from the binary heap, we swap it with the last value of the array, then pop it off the end.
+We then "sink" the new first value down into its correct position.
+```js
+  extractMax() {
     // Edge cases
     if (!this.values.length) return null;
     if (this.values.length === 1) return this.values.pop();
 
-    // "Extract" the max value and swap with the "end" value
-    const max = this.values[0];
-    const end = this.values.pop();
-    this.values[0] = end;
+    // Swap the max with the last last value, then pop the max off the end and save it
+    const end = this.values.length - 1;
+    [this.values[0], this.values[end]] = [this.values[end], this.values[0]]
+    const max = this.values.pop();
 
     // Use helper function sinkDown to "sink" the new root down to a valid position
     this.sinkDown();
