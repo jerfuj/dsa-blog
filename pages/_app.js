@@ -1,15 +1,13 @@
-import { Fragment } from 'react';
-
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-props-no-spreading */
 import Layout from '../components/layout/Layout';
 
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  )
-}
+const MyApp = ({ Component, pageProps }) => (
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
+);
 
-export default MyApp
+export default MyApp;
