@@ -1,18 +1,18 @@
-import { Fragment } from 'react';
-
+import PropTypes from 'prop-types';
 import Navbar from './nav/Navbar';
-
 import { DropdownContextProvider } from '../../context/DropdownContext';
 
-const Layout = (props) => {
-  return (
-    <Fragment>
-      <DropdownContextProvider>
-        <Navbar />
-      </DropdownContextProvider>
-      <main>{props.children}</main>
-    </Fragment>
-  )
-}
+const Layout = ({ children }) => (
+  <>
+    <DropdownContextProvider>
+      <Navbar />
+    </DropdownContextProvider>
+    <main>{children}</main>
+  </>
+);
 
-export default Layout
+Layout.propTypes = {
+  children: PropTypes.instanceOf(Object).isRequired,
+};
+
+export default Layout;
