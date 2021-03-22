@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import DropdownContext from '../../../context/DropdownContext';
 
 import CategoryList from './CategoryList';
@@ -10,12 +10,12 @@ const CategoryDropdown = () => {
 
   return (
     <div className={styles.btnAndList}>
-      <button className={styles.btn} onClick={dropdownCtx.toggleDropdown}>
-        Categories
+      <button type="button" className={styles.btn} onClick={dropdownCtx.toggleDropdown}>
+        Menu
       </button>
       {dropdownCtx.showDropdown && <CategoryList />}
     </div>
-  )
+  );
 };
 
 export default CategoryDropdown;
