@@ -1,8 +1,8 @@
 .listItem {
   list-style: none;
-  margin: .5rem 0;
+  padding: 7px 10px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .listItem a {
