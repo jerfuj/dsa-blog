@@ -1,9 +1,7 @@
-import styles from './index.module.css';
+import Home from '../components/home/Home';
 
-const Home = () => {
-  return (
-    <h1 className={styles.header}>The Home Page</h1>
-  )
-};
+const HomePage = () => (
+  <Home />
+);
 
-export default Home;
+export default HomePage;
