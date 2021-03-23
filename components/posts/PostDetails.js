@@ -1,5 +1,4 @@
 /* eslint-disable react/no-children-prop */
-import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 
@@ -21,11 +20,9 @@ const PostDetails = ({ postData }) => {
 
         return (
           <div className={styles.imgContainer}>
-            <Image
+            <img
               src={`/images/${image.url}`}
               alt={image.alt}
-              width={400}
-              height={310}
             />
           </div>
         );
@@ -44,6 +41,11 @@ const PostDetails = ({ postData }) => {
         />
       );
     },
+    link(link) {
+      return (
+        <a href={link.href} target="blank">{link.children}</a>
+      );
+    },
   };
 
   return (
@@ -52,7 +54,6 @@ const PostDetails = ({ postData }) => {
       <ReactMarkdown renderers={customRenderers}>
         {postData.content}
       </ReactMarkdown>
-
     </div>
   );
 };
