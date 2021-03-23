@@ -1,6 +1,5 @@
 .container {
-  width: 80%;
-  max-width: 900px;
+  width: 50%;
   margin: auto;
 }
 
@@ -14,6 +13,10 @@
   font-size: 3rem;
 }
 
+.container li {
+  line-height: 2em;
+}
+
 .container a {
   text-decoration: underline;
 }
@@ -24,6 +27,6 @@
   margin: 2rem;
 }
 
-.code {
-  max-width: 900px;
+.imgContainer img{
+  max-width: 60%;
 }
