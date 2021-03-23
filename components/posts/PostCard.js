@@ -1,12 +1,16 @@
-import Image from 'next/image';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import styles from './PostCard.module.css';
 
 const PostCard = ({ post }) => {
-  const { title, excerpt, image, category, slug } = post;
-
-  const imgSrc = `/images/${image}`;
+  const {
+    title,
+    excerpt,
+    category,
+    slug,
+  } = post;
 
   return (
     <div className={styles.cardContainer}>
@@ -19,7 +23,11 @@ const PostCard = ({ post }) => {
         </a>
       </Link>
     </div>
-  )
+  );
 };
 
 export default PostCard;
+
+PostCard.propTypes = {
+  post: PropTypes.instanceOf(Object).isRequired,
+};
