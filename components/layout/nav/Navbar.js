@@ -19,9 +19,13 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
-      <CategoryDropdown/>
+      <div className={styles.search}>
+        <input type="text" placeholder="search" className={styles.input} />
+        <button type="button" className={styles.btn}>Search</button>
+      </div>
+      <CategoryDropdown />
     </header>
-  )
+  );
 };
 
 export default Navbar;
