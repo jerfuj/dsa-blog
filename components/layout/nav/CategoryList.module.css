@@ -4,9 +4,10 @@
   flex-direction: column;
   z-index: 1000;
   background: white;
+  font-weight: 700;
   margin-top: 5px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-  padding: 10px 0;
+  padding: 0;
   width: 14rem;
   align-items: flex-start;
   border-radius: 5px;
