@@ -17,8 +17,12 @@ const PostCard = ({ post }) => {
       <Link href={`/${category}/${slug}`}>
         <a>
           <div className={styles.text}>
-            <h3>{title}</h3>
-            <p>{excerpt}</p>
+            <div className={styles.title}>
+              <h3>{title}</h3>
+            </div>
+            <div className={styles.excerpt}>
+              <p>{excerpt}</p>
+            </div>
           </div>
         </a>
       </Link>
