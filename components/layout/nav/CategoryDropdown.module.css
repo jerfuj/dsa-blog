@@ -3,10 +3,11 @@
 }
 
 .btn {
-  background: transparent;
-  border: 1px solid grey;
-  padding: 0.5rem 1.8rem;
-  border-radius: 20px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  padding: 0.3rem 1.8rem;
+  border-radius: 5px;
   font-size: 1.2rem;
   transition: all .2s ease-in-out;
 }
@@ -17,8 +18,8 @@
 
 .btn:hover {
   cursor: pointer;
-  background: rgb(32, 32, 32);
-  color: #fff;
+  background: var(--button-hover);
+  color: var(--button-hover-text);
 }
 
 

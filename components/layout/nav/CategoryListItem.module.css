@@ -1,15 +1,19 @@
 .listItem {
   list-style: none;
-  padding: 7px 10px;
+  height: 2rem;
   width: 100%;
   text-align: center;
+  color: #011638;
 }
 
 .listItem a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .listItem:hover {
-  color: grey;
+  text-decoration: underline;
 }

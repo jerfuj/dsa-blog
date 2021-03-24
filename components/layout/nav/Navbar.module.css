@@ -1,9 +1,45 @@
 .header {
+	position: sticky;
+	top: 0;
   width: 100%;
-  height: 5rem;
+  height: 3.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: var(--nav);
+  color: var(--nav-text)
+}
+
+.btn,
+.input {
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.input {
+  background: var(--nav-input-bg);
+  border: var(--nav-input-border);
+  margin-right: 0.2rem;
+}
+
+.btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  margin-left: 0.2rem;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: var(--button-hover);
+  color: var(--button-hover-text);
+}
+
+.input:focus,
+.btn:focus {
+  outline: none;
 }

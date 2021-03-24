@@ -4,6 +4,22 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+}
+body {
+  --background: #fff;
+  --text: #011638;
+  --nav: #0D1821;
+  --nav-text: #fff;
+  --nav-input-bg: #fff;
+  --nav-input-border: 1px solid #011638;
+  --button-bg: ;
+  --button-border: #011638;
+  --button-text: #fff;
+  --button-hover: ;
+  --button-hover-text: #738290;
+
+  color: var(--text);
 }
 
 a {
