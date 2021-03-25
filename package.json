@@ -5,10 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cache-posts": "node scripts/cache.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run cache-posts && git add cache/data.js"
+    }
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
+    "husky": "^5.2.0",
     "next": "10.0.6",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
