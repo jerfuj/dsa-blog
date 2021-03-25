@@ -1,0 +1,19 @@
+.container {
+  width: 25%;
+}
+
+.input {
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.input {
+  background: var(--nav-input-bg);
+  border: var(--nav-input-border);
+  margin-right: 0.2rem;
+}
+
+.input:focus {
+  outline: none;
+}
