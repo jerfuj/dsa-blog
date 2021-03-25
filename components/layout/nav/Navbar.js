@@ -1,9 +1,11 @@
-import { useState, useContext } from 'react';
-import DropdownContext from '../../../context/DropdownContext';
-
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { useContext } from 'react';
 import Link from 'next/link';
-
+import DropdownContext from '../../../context/DropdownContext';
 import CategoryDropdown from './CategoryDropdown';
+import Search from './Search';
 
 import styles from './Navbar.module.css';
 
@@ -19,10 +21,7 @@ const Navbar = () => {
           </a>
         </Link>
       </div>
-      <div className={styles.search}>
-        <input type="text" placeholder="search" className={styles.input} />
-        <button type="button" className={styles.btn}>Search</button>
-      </div>
+      <Search />
       <CategoryDropdown />
     </header>
   );
