@@ -1,19 +1,22 @@
-.container {
-  width: 25%;
+.search {
+  position: relative;
 }
 
 .input {
-  padding: 0.3rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 5px;
   font-size: 1.2rem;
-}
-
-.input {
   background: var(--nav-input-bg);
   border: var(--nav-input-border);
-  margin-right: 0.2rem;
+  max-width: 100%;
 }
 
 .input:focus {
   outline: none;
+}
+
+@media (max-width: 500px) {
+  .input {
+    display: none;
+  }
 }
