@@ -1,4 +1,69 @@
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 70vw;
+}
+
 .header {
   text-align: center;
   font-size: 3rem;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.imgContainer {
+  /* width: 40%; */
+  padding: 1rem;
+}
+
+.textContainer {
+  width: 60%;
+  max-width: 673px;
+  padding: 1rem;
+}
+
+.name {
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .linkContainer {
+    flex-direction: column;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+
+  .textContainer h2 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+
+  .linkContainer {
+    margin: 0;
+  }
+
+  .imgContainer {
+    padding: 0;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
 }
