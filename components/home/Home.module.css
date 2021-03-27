@@ -16,7 +16,7 @@
 .linkContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 3rem;
   background-color: #fff;
   border-radius: 5px;
@@ -28,7 +28,7 @@
 }
 
 .textContainer {
-  width: 60%;
+  width: 70%;
   max-width: 673px;
   padding: 0.5rem 1rem;
 }
