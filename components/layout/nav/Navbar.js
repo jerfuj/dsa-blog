@@ -14,15 +14,20 @@ const Navbar = () => {
 
   return (
     <header className={styles.header}>
-      <div onClick={dropdownCtx.closeDropdown}>
+      <div
+        className={styles.logoContainer}
+        onClick={dropdownCtx.closeDropdown}
+      >
         <Link href="/">
           <a>
-            <h1>DSA Blog</h1>
+            <h2>DSA Blog</h2>
           </a>
         </Link>
       </div>
       <Search />
-      <CategoryDropdown />
+      <div className={styles.menuContainer}>
+        <CategoryDropdown />
+      </div>
     </header>
   );
 };
