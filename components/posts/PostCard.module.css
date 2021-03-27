@@ -1,11 +1,10 @@
 .cardContainer {
   transition: all .2s ease-in-out;
-  /* border: 1px solid black; */
   border-radius: 5px;
-  height: 6rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 0.3rem;
-  width: 50%;
+  width: 60vw;
+  max-width: 580px;
 }
 
 .cardContainer:hover {
@@ -45,5 +44,11 @@
 .text p {
   padding-bottom: 0.5rem;
   font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    width: 90vw;
+  }
 }
 
