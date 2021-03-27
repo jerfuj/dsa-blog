@@ -18,7 +18,7 @@ export const getStaticProps = () => {
   return {
     props: {
       posts,
-      category: 'Toy Problems'
+      category: 'Toy Problems',
     },
   };
 };
