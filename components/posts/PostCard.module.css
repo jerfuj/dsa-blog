@@ -2,14 +2,17 @@
   transition: all .2s ease-in-out;
   border-radius: 5px;
   margin: 0.3rem;
+  padding: 0.5rem;
   width: 60vw;
   max-width: 580px;
   margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .cardContainer:hover {
   transform: scale(1.01);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .text {
@@ -38,7 +41,7 @@
 }
 
 .text h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
