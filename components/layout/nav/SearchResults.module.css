@@ -4,19 +4,20 @@
   flex-direction: column;
   z-index: 1000;
   background: white;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.1rem;
   margin-top: 5px;
-  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
   width: 15rem;
   align-items: flex-start;
   border-radius: 5px;
+  right: 0px;
 }
 
 .list li {
   list-style: none;
-  list-style: none;
-  height: 2rem;
+  height: 3rem;
   width: 100%;
   text-align: center;
   color: #011638;
@@ -32,4 +33,10 @@
 
 .list li:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .list {
+    display: none;
+  }
 }
