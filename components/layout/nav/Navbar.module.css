@@ -11,3 +11,16 @@
   background-color: var(--nav);
   color: var(--nav-text)
 }
+
+.logoContainer,
+.menuContainer {
+  width: 30vw;
+}
+
+.logoContainer {
+  text-align: start;
+}
+
+.menuContainer {
+  text-align: end;
+}
