@@ -1,21 +1,23 @@
 .search {
   position: relative;
+  border-bottom: 1px solid #fff;
 }
 
 .input {
   padding: 0.2rem 1rem;
   border-radius: 5px;
   font-size: 1.2rem;
-  background: var(--nav-input-bg);
-  border: var(--nav-input-border);
+  background: transparent;
+  border: none;
   max-width: 100%;
+  color: #fff;
 }
 
 .input:focus {
   outline: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .input {
     display: none;
   }
