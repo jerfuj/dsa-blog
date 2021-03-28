@@ -1,16 +1,22 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 	position: sticky;
 	top: 0;
   width: 100%;
   height: 3.7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 4%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: var(--nav);
   color: var(--nav-text);
   z-index: 999;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
 }
 
 .logoContainer,
@@ -20,6 +26,10 @@
 
 .logoContainer {
   text-align: start;
+}
+
+.logoContainer h2 {
+  margin: 0;
 }
 
 .menuContainer {
