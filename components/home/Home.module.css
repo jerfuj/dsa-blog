@@ -10,14 +10,23 @@
 
 .header {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 2rem 0 0 0;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .linkContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 3rem;
+  margin: 2rem 3rem;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

@@ -6,7 +6,7 @@ const Home = ({ links }) => (
   <div className={styles.home}>
     <div className={styles.container}>
       <h1 className={styles.header}>Useful Links</h1>
-      <div>
+      <div className={styles.linksContainer}>
         {links.map((link) => (
           <div
             key={link.id}
