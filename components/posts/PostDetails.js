@@ -1,4 +1,5 @@
 /* eslint-disable react/no-children-prop */
+import { Fragment } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 
@@ -49,12 +50,14 @@ const PostDetails = ({ postData }) => {
   };
 
   return (
-    <div className={styles.container}>
-      <h1>{postData.title}</h1>
-      <ReactMarkdown renderers={customRenderers}>
-        {postData.content}
-      </ReactMarkdown>
-    </div>
+    <>
+      <h1 className={styles.h1}>{postData.title}</h1>
+      <div className={styles.container}>
+        <ReactMarkdown renderers={customRenderers}>
+          {postData.content}
+        </ReactMarkdown>
+      </div>
+    </>
   );
 };
 
