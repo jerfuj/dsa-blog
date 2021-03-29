@@ -16,6 +16,8 @@ Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be val
 * A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 * Only the filled cells need to be validated according to the mentioned rules.
 
+---
+
 ### Example 1:
 
 ![example board 1](sudoku.png)
@@ -34,6 +36,8 @@ Input: board =
 Output: true
 ```
 
+---
+
 ### Example 2:  
 
 ```js
@@ -50,11 +54,15 @@ Input: board =
 Output: false  
 Explanation: "Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid."
 ```
+
+---
  
 ### Constraints: 
 board.length == 9  
 board[i].length == 9  
 board[i][j] is a digit or '.'.
+
+---
 
 ## Solution:
 First, we're going to create the storage we'll be using to determine whether there are duplicates in any row, column, or 3x3 square.

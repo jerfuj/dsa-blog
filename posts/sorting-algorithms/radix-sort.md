@@ -11,9 +11,13 @@ Time: O(nk)
 
 Space: O(n + k)
 
+---
+
 ## Description:
 The idea of Radix Sort is to iteratively compare and place numbers in buckets according to the current digit. We start
 at the ones digit then move left as long as one of the numbers has places remaining.
+
+---
 
 ### getDigit (helper function):
 getDigit gets the digit at the current place (i). For example, if the input num is 1234 and we want the tens place,

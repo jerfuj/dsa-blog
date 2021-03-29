@@ -11,10 +11,13 @@ Time: O(n^2)
 
 Space: O(1)
 
+---
 
 ## Description:
 Insertion sort builds our sorted array one element at a time by *inserting*
 the current element into the correct position in the already sorted part of the array
+
+---
 
 ## Steps:
 1. Iterate over the array (i) starting at index 1

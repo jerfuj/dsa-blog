@@ -18,6 +18,8 @@ category: data-structures
 
 5. Suitable to be stored in an array
 
+---
+
 ## Calculating a parent or child index:
 
 - Given a parent index (n): Children are at indices **2n + 1 (left) and 2n + 2 (right)**

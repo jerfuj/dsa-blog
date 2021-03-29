@@ -11,9 +11,13 @@ Time: O(n^2)
 
 Space: O(1)
 
+---
+
 ## Description:
 Selection sort loops through the array, and at each iteration, finds the smallest value
 within the rest of the array and swaps it with the current value.
+
+---
 
 ## Steps:
 1. Iterate over the array (i)

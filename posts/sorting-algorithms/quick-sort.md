@@ -13,8 +13,12 @@ Time:
 
 Space: O(log(n))
 
+---
+
 ## Description:
 Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. - [Wikipedia](https://en.wikipedia.org/wiki/Quicksort)
+
+---
 
 ## Steps (partition function):
 1. There are many ways to choose the pivot, but in this example, we'll using the first element of the array.

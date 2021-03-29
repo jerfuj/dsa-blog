@@ -11,9 +11,13 @@ Time: O(n^2)
 
 Space: O(1)
 
+---
+
 ## Description:
 Bubble sort is a sorting algorithm where adjacent values are compared and swapped if needed
 until the list is sorted.
+
+---
 
 ## Steps:
 1. Iterate over the array backwards (i)

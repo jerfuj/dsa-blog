@@ -11,9 +11,13 @@ Time: O(n log(n))
 
 Space: O(n)
 
+---
+
 ## Description:
 Merge sort uses a divide and conquer approach by recursively splitting the array into mini-arrays,
 then merging them back together to form a sorted array.
+
+---
 
 ## Steps (merge function):
 First we'll create a merging function that will merge two sorted arrays into one.
