@@ -1,6 +1,12 @@
 .container {
-  width: 50vw;
+  width: 60vw;
   margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 5px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
 .container p {
@@ -10,7 +16,8 @@
 
 .container h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-top: 0;
 }
 
 .container li {
@@ -28,6 +35,12 @@
 
 .imgContainer img{
   max-width: 60%;
+}
+
+@media (max-width: 790px) {
+  .container {
+    width: 90vw
+  }
 }
 
 @media (max-width: 480px) {
