@@ -46,6 +46,8 @@
 @media (max-width: 480px) {
   .container {
     width: 90vw;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .container h1 {
