@@ -18,7 +18,7 @@
   outline: none;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 790px) {
   .input {
     display: none;
   }
