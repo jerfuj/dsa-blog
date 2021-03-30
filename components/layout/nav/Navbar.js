@@ -21,7 +21,7 @@ const Navbar = () => {
         >
           <Link href="/">
             <a>
-              <h2>DSA Blog</h2>
+              <h2>DSA Notes</h2>
             </a>
           </Link>
         </div>

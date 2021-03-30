@@ -8,7 +8,7 @@ import '../styles/globals.css';
 const MyApp = ({ Component, pageProps }) => (
   <Layout>
     <Head>
-      <title>DSA Blog</title>
+      <title>DSA Notes</title>
       <link rel="shortcut icon" href="/favicon.png" />
     </Head>
     <Component {...pageProps} />
