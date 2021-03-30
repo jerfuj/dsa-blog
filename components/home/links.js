@@ -21,6 +21,13 @@ const links = [
     image: '/images/AlgoExpert.png',
   },
   {
+    id: 'binarysearch',
+    name: 'Binary Search',
+    url: 'https://binarysearch.com/',
+    description: 'Binary Search is similar to other toy problem platforms like Leetcode, but you\'re also able to get together with other engineers and work on problems at the same time. I love being able to work on problems with friends and share ideas and solutions with one another.',
+    image: '/images/binarysearch.png',
+  },
+  {
     id: 'next-js',
     name: 'Next.js & React - The Complete Guide',
     url: 'https://www.udemy.com/course/nextjs-react-the-complete-guide/',
