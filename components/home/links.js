@@ -14,6 +14,13 @@ const links = [
     image: '/images/visualgo.png',
   },
   {
+    id: 'algoexpert',
+    name: 'AlgoExpert',
+    url: 'https://www.algoexpert.io/',
+    description: 'AlgoExpert is a platform for preparing for coding interviews. Features include 140 hand-picked toy problems, a data structures crash course, practice tests to simulate a day of coding interviews, and mock interviews.',
+    image: '/images/AlgoExpert.png',
+  },
+  {
     id: 'next-js',
     name: 'Next.js & React - The Complete Guide',
     url: 'https://www.udemy.com/course/nextjs-react-the-complete-guide/',
