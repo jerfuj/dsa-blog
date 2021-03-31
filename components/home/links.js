@@ -28,6 +28,13 @@ const links = [
     image: '/images/binarysearch.png',
   },
   {
+    id: 'codewars',
+    name: 'Codewars',
+    url: 'https://www.codewars.com/',
+    description: 'Codewars was the first toy problem platform I used when I first started learning code. What I like about Codewars is that users are rated by "kyu" and so there\'s a bit of motivation to complete more problems and improve.',
+    image: '/images/codewars.png',
+  },
+  {
     id: 'next-js',
     name: 'Next.js & React - The Complete Guide',
     url: 'https://www.udemy.com/course/nextjs-react-the-complete-guide/',
