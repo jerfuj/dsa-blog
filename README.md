@@ -7,7 +7,7 @@ After graduating from Hack Reactor's Software Engineering Immersive Bootcamp, I 
 * CSS Modules
 
 ## Screenshots
-### Home Page
+### Homepage
 ![Home page](/screenshots/DSA-Notes-homepage.png)
 ### Toy Problem Example
 ![Toy Problem Example](/screenshots/DSA-Notes-toy-problem.png)
