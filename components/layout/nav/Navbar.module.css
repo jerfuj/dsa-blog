@@ -41,3 +41,10 @@
     width: 90vw;
   }
 }
+
+@media (max-width: 555px) {
+  .logoContainer,
+  .menuContainer {
+    width: 50%;
+  }
+}
