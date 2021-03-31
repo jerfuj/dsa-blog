@@ -21,8 +21,8 @@ const Home = ({ links }) => (
               <Image
                 src={link.image}
                 alt={link.name}
-                width={480}
-                height={300}
+                width={400}
+                height={250}
               />
             </a>
             <div className={styles.textContainer}>
