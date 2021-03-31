@@ -48,11 +48,17 @@ const mostDigits = (nums) => {
 ```
 ## Steps:
 1. Find the maximum amount of digits of a single number within the array.
+
 2. Loop this ^  many times.
+
 3. Create the 10 buckets, one for each possible digit (0-9).
+
 4. Create an inner loop and iterate over the input array.
+
 5. Place each number in the correct bucket, according to the current digit.
+
 6. Concatenate all of the buckets, then move the the next "place" in the iteration.
+
 7. Return the sorted array.
 ```js
 const radixSort = (nums) => {

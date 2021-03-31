@@ -22,10 +22,14 @@ Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' ele
 
 ## Steps (partition function):
 1. There are many ways to choose the pivot, but in this example, we'll using the first element of the array.
+
 2. swapIdx will start at the first index, but will move as we do more swaps. (Everything left of, and including swapIdx will be less than the pivot)
+
 3. Iterate over the rest of the array starting at left + 1, since our pivot is at left.
 4. Check if the current element is less than the pivot. If so, increment swapIdx, then swap the element at swapIdx with the current element.
+
 5. After the loop, swap the pivot with the element at swapIdx.
+
 6. Return the swapIdx.
 
 ```js
