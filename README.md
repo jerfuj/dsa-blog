@@ -6,6 +6,13 @@ After graduating from Hack Reactor's Software Engineering Immersive Bootcamp, I 
 * React
 * CSS Modules
 
+## Screenshots
+### Home Page
+![Home page](/screenshots/DSA-Notes-homepage.png)
+### Toy Problem Example
+![Toy Problem Example](/screenshots/DSA-Notes-toy-problem.png)
+
+
 ## Installation
 ```bash
 npm install
