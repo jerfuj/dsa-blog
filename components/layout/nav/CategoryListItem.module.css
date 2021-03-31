@@ -16,5 +16,5 @@
 }
 
 .listItem:hover {
-  text-decoration: underline;
+  background-color: rgb(238, 238, 238);
 }
