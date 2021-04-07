@@ -22,11 +22,11 @@ the current element into the correct position in the already sorted part of the 
 ## Steps:
 1. Iterate over the array (i) starting at index 1
 
-2. Create a variable to hold our current value (array[i])
+2. Hold a reference to our current value (array[i])
 
-3. Within the loop, iterate backwards (j) starting at i - 1
+3. Create an inner loop (j) where we'll iterate backwards, starting at i - 1, as long as array[j] > current
 
-4. Break out of the loop once array[j] < our current value
+4. Break out of the loop once array[j] < our current value OR j < 0
 
 5. Set array[j + 1] equal to our current value
 
