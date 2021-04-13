@@ -66,7 +66,7 @@ class BinarySearchTree {
     return false;
   }
 
-    BFS() {
+  BFS() {
     const visited = [];
     const queue = [this.root];
     let current;
